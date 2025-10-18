@@ -1,0 +1,9 @@
+services:
+  node-app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
