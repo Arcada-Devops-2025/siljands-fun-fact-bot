@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install -g twilio express
+      - run: npm install twilio express
       - run: node server.js
