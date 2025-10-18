@@ -1,0 +1,12 @@
+name: build-and-deploy
+on: [push]
+jobs:
+  install-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install -g twilio express
+      - run: node server.js
