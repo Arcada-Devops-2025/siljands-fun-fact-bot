@@ -8,6 +8,9 @@ A Twilio bot that replies with fun facts.
 3. Start server: node server.js
 4. Go to http://127.0.0.1:8080/ and get your fact
 
+# Testing
+This project uses Vitest for testing and uses Github Actions. 
+
 # Dockerisation (for running on RAHTI)
 Added Dockerfile and docker-compose for hosting on RAHTI.
 
